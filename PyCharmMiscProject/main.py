@@ -34,6 +34,8 @@ while game_is_on:
     move_snake()
     snake.movers()
 
+    #This part was notoriously difficult; it took me 20 min just to think of an idea so the snake won't kill itself when the head is touching the second node.
+
     if snake.segments[0].distance(foods) < 15:
         foods.refresh()
         snake.extend()
